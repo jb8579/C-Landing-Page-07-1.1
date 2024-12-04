@@ -78,6 +78,22 @@
                 <header class="top-bar">
                     <div class="top-bar-border-top"></div>
                     
+                    <div class="top-bar-wrapper promo-wrap-bar">
+                        <div class="top-bar-header-item">
+                        
+                        </div>
+                        <div class="top-bar-header-item">
+                            <div class="logged-out-content">
+                                <a href="register.html">
+                                    <button class="btn btn-flat btn-join-now" tabindex="0">Join Now!</button>
+                                </a>
+
+                                <a onclick="document.getElementById('id01').style.display='block'">
+                                    <button class="btn btn-flat btn-sign-in" >Login Now!</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </header>
                 <!-- ===================== Header End ======================== -->
 
@@ -110,11 +126,11 @@
                                         <p>Discover fresh offers every week to elevate your experience</p>
                                     </div>
                                     <div class="promotion-slider">
-                                        <!-- Card 1 -->
+                                        
                                         <div class="promotion-card card1">
                                             <div class="ribbon">
                                                 <img src="images/award.png" alt="Award Ribbon for Promotion 1">
-                                                <p>1</p>
+                                                <p>#1</p>
                                             </div>
                                             <img src="images/presents.png" alt="Gift Box Promotion Icon">
                                             <h2>100% up to $500 <br><span>+200 Freespins</span></h2>
@@ -124,7 +140,7 @@
                                         <div class="promotion-card card2">
                                             <div class="ribbon">
                                                 <img src="images/award.png" alt="Award Ribbon for Promotion 1">
-                                                <p>1</p>
+                                                <p>#2</p>
                                             </div>
                                             <img src="images/presents.png" alt="Gift Box Promotion Icon">
                                             <h2>100% up to $400 <br><span>+200 Freespins</span></h2>
@@ -134,7 +150,7 @@
                                         <div class="promotion-card card3">
                                             <div class="ribbon">
                                                 <img src="images/award.png" alt="Award Ribbon for Promotion 1">
-                                                <p>1</p>
+                                                <p>#3</p>
                                             </div>
                                             <img src="images/presents.png" alt="Gift Box Promotion Icon">
                                             <h2>100% up to $300 <br><span>+200 Freespins</span></h2>
@@ -144,7 +160,7 @@
                                         <div class="promotion-card card4">
                                             <div class="ribbon">
                                                 <img src="images/award.png" alt="Award Ribbon for Promotion 1">
-                                                <p>1</p>
+                                                <p>#4</p>
                                             </div>
                                             <img src="images/presents.png" alt="Gift Box Promotion Icon">
                                             <h2>100% up to $250 <br><span>+200 Freespins</span></h2>
@@ -154,7 +170,7 @@
                                         <div class="promotion-card card5">
                                             <div class="ribbon">
                                                 <img src="images/award.png" alt="Award Ribbon for Promotion 1">
-                                                <p>1</p>
+                                                <p>#5</p>
                                             </div>
                                             <img src="images/presents.png" alt="Gift Box Promotion Icon">
                                             <h2>100% up to $200<br><span>+200 Freespins</span></h2>
@@ -165,7 +181,6 @@
                                     </div>
                                 </div>
                             </section>
-                            
                             <!-- ============================= Promotion End =================== -->
 
 
@@ -302,29 +317,46 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script>
-            $(document).ready(function(){
-                $('.promotion-slider').slick({
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    dots: true,
-                    arrows: true,
-                    responsive: [
-                        {
-                            breakpoint: 1024, // Tablet
-                            settings: {
-                                slidesToShow: 2,
-                            }
-                        },
-                        {
-                            breakpoint: 768, // Mobile
-                            settings: {
-                                slidesToShow: 1,
-                            }
-                        }
-                    ]
-                });
+           $(document).ready(function () {
+    function initializeSlider() {
+        if (!$('.promotion-slider').hasClass('slick-initialized')) {
+            $('.promotion-slider').slick({
+                infinite: true,
+                slidesToShow: $(window).width() >= 1024 ? 3 : 2, // 3 for desktop, 2 for tablet
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
             });
+        }
+    }
+
+    function destroySlider() {
+        if ($('.promotion-slider').hasClass('slick-initialized')) {
+            $('.promotion-slider').slick('unslick');
+        }
+    }
+
+    function toggleView() {
+        const windowWidth = $(window).width();
+
+        if (windowWidth >= 768) {
+            initializeSlider();
+            $('.promotion-slider').show();
+        } else {
+            destroySlider();
+            $('.promotion-slider .promotion-card').css('display', 'block'); // Show cards individually on mobile
+        }
+    }
+
+    // Initial check
+    toggleView();
+
+    // Recheck on window resize
+    $(window).resize(function () {
+        toggleView();
+    });
+});
+
         </script>
         
     </body>

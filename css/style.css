@@ -3,10 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
-.promotion-slider .promotion-card {
-  padding: 35px 15px;
-  margin: 0px 8px;
+/* Default slider setup */
+.promotion-slider {
+  display: block;
 }
+
+.promotion-slider .promotion-card {
+  display: block; /* Cards are displayed in the slider */
+}
+
+/* Individual cards for mobile */
+@media (max-width: 767px) {
+  .promotion-slider {
+      display: block; /* Cards shown in stacked layout */
+  }
+
+  .promotion-slider .promotion-card {
+      display: block;
+      margin: 10px ; /* Adjust for spacing */
+  }
+}
+
+
 .shell-content.shell-p {
   min-height: auto !important;
 }
@@ -60,9 +78,10 @@ section.promotion-section {
 }
 
 .promotion-card {
-  padding: 30px;
+  padding: 30px 0px;
   border-radius: 6px;
 }
+
 
 .card1{
   background-image: url('../images/b3.jpg');
@@ -210,6 +229,7 @@ section.promotion-section {
 
 .promotion-card{
   cursor: pointer;
+  margin: 0px 12px;
 }
 .promotion-card > p {
   font-family: "Roboto", serif;
@@ -227,7 +247,7 @@ section.promotion-section {
 .promotion-card > a > button {
   font-family: "Roboto", serif;
   padding: 9px 24px;
-  background-color: #00000075;
+  background-color: transparent;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -241,6 +261,28 @@ section.promotion-section {
   outline: 0px !important;
 }
 
+.promotion-card.card1 > a > button {
+  text-shadow: 0px 3px 5px #ffffffd1;
+  background-color: #8f0f95;
+}
+.promotion-card.card2 > a > button {
+  text-shadow: 0px 3px 5px #fdfcfcd1;
+  background-color: #0a9901;
+}
+.promotion-card.card3 > a > button {
+  text-shadow: 0px 3px 5px #ffffffa8;
+  background-color: #950046;
+}
+.promotion-card.card4 > a > button {
+  text-shadow: 0px 3px 5px #ffffffc4;
+  background-color: #bd2607;
+}
+
+.promotion-card.card5 > a > button {
+  text-shadow: 0px 3px 5px #ffffffad;
+  background-color: #031463;
+}
+
 .promotion-card.promotion-card-center {
   position: relative;
   left: 50%;
@@ -252,7 +294,6 @@ section.promotion-section {
 .ribbon {
   position: absolute;
   z-index: 99;
-  display: none;
 }
 
 .ribbon > img {
@@ -265,11 +306,17 @@ section.promotion-section {
 
 .ribbon > p {
   position: absolute;
-  top: -39px;
-  left: -23px;
+  top: -22px;
+  left: 10px;
   font-weight: 700;
-  font-size: 19px;
-  color: #555555;
+  font-size: 15px;
+  color: #000000;
+  box-shadow: 0px 5px 5px #ffffff41;
+  background: #ffffff;
+  padding: 3px 4px;
+  border-radius: 50px;
+  height: 28px;
+  width: 28px;
 }
 
 #disclaimer {
@@ -307,7 +354,9 @@ section.promotion-section {
       line-height: 18px;
       word-spacing: 0px;
   }
-
+  .top-bar-wrapper.promo-wrap-bar {
+    display: none;
+}
   .promotion-wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -349,10 +398,17 @@ section.promotion-section {
 
 .ribbon > p {
   position: absolute;
-  top: -27px;
-  left: -25px;
+  top: -70px;
+  left: -32px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
+  color: #000000;
+  box-shadow: 0px 5px 5px #ffffff41;
+  background: #ffffff;
+  padding: 3px 4px;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
 }
 .promotion-slider .promotion-card {
   padding: 60px 15px;
