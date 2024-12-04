@@ -1,0 +1,494 @@
+<!DOCTYPE html>   
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <!-- ======================== Title ============================= -->
+        <title>VIP Betting Services</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+
+        <!-- ================== Link CSS ======================== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.49c3b374e2ad9f0dc978.css">
+        <link rel="stylesheet" href="css/banner-styles.css">
+        <link rel="stylesheet" href="css/record.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+        <!-- ==================== Google Fonts ======================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        
+        <!-- ============= Icon Link ============= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+
+    <body class="hold-transition layout-boxed skin-black sidebar-mini">
+         <!-- ========================= Login Popup Start ===================== -->
+         <div id="id01" class="modal">
+            <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h1>Login to your account</h1>
+            </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit" class="mt-2 btn-login">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        
+            <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+            </form>
+        </div>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+        <!-- ========================= Login Popup End ====================== -->
+
+        
+        <div class="shell">
+            <div class="shell-wrapper">
+                <!-- ===================== Header Start ======================== -->
+                <header class="top-bar">
+                    <div class="top-bar-border-top"></div>
+                    <div class="top-bar-wrapper">
+                        <div class="top-bar-header-item">
+                            <div  id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> Operating 7 days a week on all metropolitan and provincial Australian race meetings.</span>
+                                    </div>
+
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> On-course betting: (02) 9571 0012</span><span> Account enquiries: 0411649291</span>
+                                    </div>
+
+                                    <div class="carousel-item active" data-bs-interval="800">
+                                        <span> Weekly promotions and racing specials available to existing customers. Log in for more info.</span>
+                                    </div>
+
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> Gamble responsibly. Need help? Call 1800 858 858 or go to <a href="#" target="_blank">https://www.gamblinghelponline.org.au</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="top-bar-header-item">
+                            <div class="logged-out-content">
+                                <a href="register.html">
+                                    <button class="btn btn-flat btn-join-now" tabindex="0">Join Now!</button>
+                                </a>
+
+                                <a onclick="document.getElementById('id01').style.display='block'">
+                                    <button class="btn btn-flat btn-sign-in" >Login Now!</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- ===================== Header End ======================== -->
+
+
+
+                <!-- ===================== Menu Bar Start =================== -->
+                <div class="menu-bar">
+                    <div class="menu-bar-container container-fluid">
+                        <div class="menu-bar-content">
+
+                            <div class="content-logo">
+                                <a class="logo-icon" href="index.html"><img height="87" src="images/logo.png"></a>
+                            </div>
+
+
+                            <div class="content-menu">
+                                <a class="menu-item home active" href="index.html">
+                                    <div class="menu-icon home"></div>
+                                    <div class="menu-title">home</div>
+                                </a>
+
+
+                                <a class="menu-item racing" href="listed-races.html">
+                                    <div class="menu-icon racing"></div>
+                                    <div class="menu-title">racing</div>
+                                </a>
+
+
+                                <a class="menu-item about-us" href="about-us.html">
+                                    <div class="menu-icon about-us"></div>
+                                    <div class="menu-title">about us</div>
+                                </a>
+
+
+                                <a class="menu-item betslip" role="button" href="listed-races.html">
+                                    <div class="betslip-container">
+                                        <div class="betslip-icon"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================== Menu Bar End =================== -->
+
+
+
+                <div class="shell-content">
+                    <section class="shell-main-section card" id="shell-main">
+                        <div class="dashboard-main">
+
+                            <!-- ======================== Listed Race Start =================== -->
+                            <section class="race-list">
+                                <div class="todays-racing">
+                                    <div class="todays-racing-tab-menu">
+                                        <div class="todays-racing-lbl container"><span>Listed Race</span></div>
+                                    </div>
+
+                                    <div class="table-responsive container pt-5 race-list-p">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Race Name</th>
+                                                    <th>State</th>
+                                                    <th>Prize Money</th>
+                                                    <th>Distance</th>
+                                                    <th>Track</th>
+                                                </tr>
+                                            </thead>
+                                    
+                                            <tbody>
+                                                <tr>
+                                                    <td>18/10/2024</td>
+                                                    <td class="td-2">Golden Sprint</td>
+                                                    <td>NSW</td>
+                                                    <td class="td-4">$250,000</td>
+                                                    <td class="td-5">1200</td>
+                                                    <td class="td-6">Randwick<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20/10/2024</td>
+                                                    <td class="td-2">Autumn Classic</td>
+                                                    <td>SA</td>
+                                                    <td class="td-4">$200,000</td>
+                                                    <td class="td-5">1600</td>
+                                                    <td class="td-6">Morphettville<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22/10/2024</td>
+                                                    <td class="td-2">Sunshine Cup</td>
+                                                    <td>QLD</td>
+                                                    <td class="td-4">$150,000</td>
+                                                    <td class="td-5">1400</td>
+                                                    <td class="td-6">Doomben<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24/10/2024</td>
+                                                    <td class="td-2">Southern Derby</td>
+                                                    <td>VIC</td>
+                                                    <td class="td-4">$500,000</td>
+                                                    <td class="td-5">2400</td>
+                                                    <td class="td-6">Flemington<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26/10/2024</td>
+                                                    <td class="td-2">Morning Star Stakes</td>
+                                                    <td>WA</td>
+                                                    <td class="td-4">$175,000</td>
+                                                    <td class="td-5">1800</td>
+                                                    <td class="td-6">Ascot<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28/10/2024</td>
+                                                    <td class="td-2">Emerald Sprint</td>
+                                                    <td>NSW</td>
+                                                    <td class="td-4">$300,000</td>
+                                                    <td class="td-5">1200</td>
+                                                    <td class="td-6">Rosehill<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30/10/2024</td>
+                                                    <td class="td-2">Northern Plate</td>
+                                                    <td>NT</td>
+                                                    <td class="td-4">$125,000</td>
+                                                    <td class="td-5">1000</td>
+                                                    <td class="td-6">Fannie Bay<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02/11/2024</td>
+                                                    <td class="td-2">Coastal Challenge</td>
+                                                    <td>QLD</td>
+                                                    <td class="td-4">$225,000</td>
+                                                    <td class="td-5">1600</td>
+                                                    <td class="td-6">Eagle Farm<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>04/11/2024</td>
+                                                    <td class="td-2">Outback Mile</td>
+                                                    <td>NT</td>
+                                                    <td class="td-4">$100,000</td>
+                                                    <td class="td-5">1600</td>
+                                                    <td class="td-6">Alice Springs<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>06/11/2024</td>
+                                                    <td class="td-2">Desert Stakes</td>
+                                                    <td>WA</td>
+                                                    <td class="td-4">$275,000</td>
+                                                    <td class="td-5">2000</td>
+                                                    <td class="td-6">Belmont Park<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>08/11/2024</td>
+                                                    <td class="td-2">Pacific Handicap</td>
+                                                    <td>NSW</td>
+                                                    <td class="td-4">$350,000</td>
+                                                    <td class="td-5">1400</td>
+                                                    <td class="td-6">Newcastle<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10/11/2024</td>
+                                                    <td class="td-2">Highland Dash</td>
+                                                    <td>TAS</td>
+                                                    <td class="td-4">$120,000</td>
+                                                    <td class="td-5">1100</td>
+                                                    <td class="td-6">Hobart<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12/11/2024</td>
+                                                    <td class="td-2">Royal Oaks</td>
+                                                    <td>SA</td>
+                                                    <td class="td-4">$400,000</td>
+                                                    <td class="td-5">2500</td>
+                                                    <td class="td-6">Murray Bridge<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14/11/2024</td>
+                                                    <td class="td-2">Winter Trophy</td>
+                                                    <td>ACT</td>
+                                                    <td class="td-4">$150,000</td>
+                                                    <td class="td-5">1300</td>
+                                                    <td class="td-6">Canberra<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16/11/2024</td>
+                                                    <td class="td-2">Spring Dash</td>
+                                                    <td>QLD</td>
+                                                    <td class="td-4">$180,000</td>
+                                                    <td class="td-5">1500</td>
+                                                    <td class="td-6">Gold Coast<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18/11/2024</td>
+                                                    <td class="td-2">Southern Mile</td>
+                                                    <td>VIC</td>
+                                                    <td class="td-4">$220,000</td>
+                                                    <td class="td-5">1600</td>
+                                                    <td class="td-6">Geelong<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20/11/2024</td>
+                                                    <td class="td-2">Coral Coast Cup</td>
+                                                    <td>WA</td>
+                                                    <td class="td-4">$275,000</td>
+                                                    <td class="td-5">1800</td>
+                                                    <td class="td-6">Pinjarra<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22/11/2024</td>
+                                                    <td class="td-2">River City Sprint</td>
+                                                    <td>NSW</td>
+                                                    <td class="td-4">$300,000</td>
+                                                    <td class="td-5">1200</td>
+                                                    <td class="td-6">Warwick Farm<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>24/11/2024</td>
+                                                    <td class="td-2">Tropical Challenge</td>
+                                                    <td>QLD</td>
+                                                    <td class="td-4">$350,000</td>
+                                                    <td class="td-5">2200</td>
+                                                    <td class="td-6">Townsville<span> ></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26/11/2024</td>
+                                                    <td class="td-2">Barrier Reef Stakes</td>
+                                                    <td>NSW</td>
+                                                    <td class="td-4">$400,000</td>
+                                                    <td class="td-5">2000</td>
+                                                    <td class="td-6">Gosford<span> ></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </section>
+                            <!-- ======================== Listed Race End =================== -->
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========================== Footer Start ============================= -->
+        <footer-bar _nghost-bvx-c5="">
+            <footer _ngcontent-bvx-c5="" class="footer">
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <form _ngcontent-bvx-c5="" class="footer-description ng-untouched ng-pristine ng-valid" novalidate="">
+                                <div _ngcontent-bvx-c5="" class="footer-description-item"><span _ngcontent-bvx-c5="">Get exclusive offers and news.</span></div>
+                                <div _ngcontent-bvx-c5="" class="footer-description-item">
+                                    <div _ngcontent-bvx-c5="" class="input-group form-group">
+                                        <input _ngcontent-bvx-c5="" class="form-control ng-untouched ng-pristine ng-invalid" name="Email" placeholder="Email Address" type="email"><span _ngcontent-bvx-c5="" class="input-group-append"><button _ngcontent-bvx-c5="" class="btn btn-flat subscribe-btn" disabled=""> Subscribe </button></span></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Company </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="index.html">Home</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="about-us.html">About us</a>
+
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="listed-races.html">Updated Racing List
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class=" col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Legal </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="privacy-policy.html">Privacy Policy</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item"
+                                    href="terms-conditions.html">Terms and Conditions</a><a _ngcontent-bvx-c5="" class="footer-description-item" href="dispute-resolution.html">Dispute Resolution</a>
+
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12 col-md-6 no-padding">
+                                    <div _ngcontent-bvx-c5="" class="footer-header"> Accepted Payment Methods </div>
+                                    <div _ngcontent-bvx-c5="" class="footer-description footer-payment">
+                                        
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/direct_transfer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/visa_payment_footer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/mastercard.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/POLi_footer_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Customer Support </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description"><a _ngcontent-bvx-c5="" class="footer-description-item" href="tel:+012345678"><i _ngcontent-bvx-c5="" aria-hidden="true" class="fa fa-phone"></i>&nbsp;+012-0123-2136-123</a></div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description" style="text-transform: lowercase;"><a _ngcontent-bvx-c5="" class="footer-description-item" href="mailto:contact@vipbettingservices.com"><i class="fa-solid fa-envelope fa-fw"></i>&nbsp;contact@vipbettingservices.com</a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="footer-logos"></div>
+                            <div _ngcontent-bvx-c5="" class="footer-others col-lg-12 col-md-12 mt-4">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12">
+                                    <div _ngcontent-bvx-c5="" class="row">
+                                        <div _ngcontent-bvx-c5="" class="col-md-8 col-sm-7 middle-footer">
+                                            <div _ngcontent-bvx-c5="" class="col-md-2 middle-image"></div>
+                                            <div _ngcontent-bvx-c5="" class="col-md-10 text-left middle-content"><b _ngcontent-bvx-c5="">Must be 18+ </b>
+                                                <br _ngcontent-bvx-c5=""> <a href="https://www.sa.gov.au/topics/business-and-trade/gambling/codes-of-practice" style="color: #fff !important;" target="_blank">South Australian Residents, Vipbettingservices.com gambling operations are governed by the South Australia Gambling Codes of Practice.</a> Vipbettingservices.com is licensed in New South Wales by Racing NSW and regulated by liquor and Gaming NSW. Think About Your Choices Call Gambling Help 1800 858 858 Responsible Gambling.
+                                            </div>
+                                        </div>
+
+                                        <div _ngcontent-bvx-c5="" class="col-md-4 col-sm-5 right-footer">
+                                            <div _ngcontent-bvx-c5="" class="right-image"><img _ngcontent-bvx-c5="" alt="Shield" src="images/shield.png" style="width:34px; height:41px; margin-right:15px; float:left;">
+                                                <br _ngcontent-bvx-c5="">
+                                            </div>
+                                            <div _ngcontent-bvx-c5="" class="right-content"> YOUR PRIVACY IS IMPORTANT TO US. WE ARE USING A 2048 BIT ENCRYPTION. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div _ngcontent-bvx-c5="" class="row beta mt-4">
+                            <div _ngcontent-bvx-c5="" class="col-lg-12 beta-info">
+                                <div _ngcontent-bvx-c5="" class="copyright">© 2020&nbsp;VIP Betting. ALL RIGHTS RESERVED.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
+        </footer-bar>
+        <!-- ========================== Footer End ============================= -->
+
+        
+
+        <!-- ====================== Script ================================ -->
+        <script src="js/main.90c1149d44f0bb951215.js"></script>
+        <script src="js/min.js"></script>
+        <script src="js/ruffle.js"></script>
+        <script src="js/scripts.9ebd9a470698bb2985b7.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

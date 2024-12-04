@@ -1,0 +1,331 @@
+<!DOCTYPE html>   
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <!-- ======================== Title ============================= -->
+        <title>VIP Betting Services</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+
+        <!-- ================== Link CSS ======================== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.49c3b374e2ad9f0dc978.css">
+        <link rel="stylesheet" href="css/banner-styles.css">
+        <link rel="stylesheet" href="css/iconochive.css">
+        <link rel="stylesheet" href="css/record.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+        <!-- ==================== Google Fonts ======================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        
+        <!-- ============= Icon Link ============= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+
+    <body class="hold-transition layout-boxed skin-black sidebar-mini">
+         <!-- ========================= Login Popup Start ===================== -->
+         <div id="id01" class="modal">
+            <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h1>Login to your account</h1>
+            </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit" class="mt-2 btn-login">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        
+            <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+            </form>
+        </div>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+        <!-- ========================= Login Popup End ====================== -->
+
+        
+        <div class="shell">
+            <div class="shell-wrapper">
+                <!-- ===================== Header Start ======================== -->
+                <header class="top-bar">
+                    <div class="top-bar-border-top"></div>
+                    <div class="top-bar-wrapper">
+                        <div class="top-bar-header-item">
+                            <div  id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> Operating 7 days a week on all metropolitan and provincial Australian race meetings.</span>
+                                    </div>
+
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> On-course betting: (02) 9571 0012</span><span> Account enquiries: 0411649291</span>
+                                    </div>
+
+                                    <div class="carousel-item active" data-bs-interval="800">
+                                        <span> Weekly promotions and racing specials available to existing customers. Log in for more info.</span>
+                                    </div>
+
+                                    <div class="carousel-item" data-bs-interval="800">
+                                        <span> Gamble responsibly. Need help? Call 1800 858 858 or go to <a href="#" target="_blank">https://www.gamblinghelponline.org.au</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="top-bar-header-item">
+                            <div class="logged-out-content">
+                                <a href="register.html">
+                                    <button class="btn btn-flat btn-join-now" tabindex="0">Join Now!</button>
+                                </a>
+
+                                <a onclick="document.getElementById('id01').style.display='block'">
+                                    <button class="btn btn-flat btn-sign-in" >Login Now!</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- ===================== Header End ======================== -->
+
+
+
+                <!-- ===================== Menu Bar Start =================== -->
+                <div class="menu-bar">
+                    <div class="menu-bar-container container-fluid">
+                        <div class="menu-bar-content">
+
+                            <div class="content-logo">
+                                <a class="logo-icon" href="index.html"><img height="87" src="images/logo.png"></a>
+                            </div>
+
+
+                            <div class="content-menu">
+                                <a class="menu-item home active" href="index.html">
+                                    <div class="menu-icon home"></div>
+                                    <div class="menu-title">home</div>
+                                </a>
+
+
+                                <a class="menu-item racing" href="listed-races.html">
+                                    <div class="menu-icon racing"></div>
+                                    <div class="menu-title">racing</div>
+                                </a>
+
+
+                                <a class="menu-item about-us" href="about-us.html">
+                                    <div class="menu-icon about-us"></div>
+                                    <div class="menu-title">about us</div>
+                                </a>
+
+
+                                <a class="menu-item betslip" role="button" href="listed-races.html">
+                                    <div class="betslip-container">
+                                        <div class="betslip-icon"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================== Menu Bar End =================== -->
+
+
+
+                <div class="shell-content">
+                    <section class="shell-main-section card" id="shell-main">
+                        <div class="dashboard-main">
+
+                            <!-- ============================= About Us Start =================== -->
+                            <section class="page-section">
+                                <div class="container">
+                                    <div class="page-content">
+                                        <h1>About Us</h1>
+                                        <p>At VIP Betting Services, we are dedicated to offering an elite sports betting experience designed for those who seek more than just ordinary betting. With years of expertise in the industry, our focus is on providing personalized, high-end services that ensure our clients have access to the best markets, exclusive insights, and top-notch customer support.</p>
+                                        <p>We understand that betting is more than just placing a wager—it's about precision, strategy, and staying ahead of the game. That’s why we’ve built our service around offering exclusive opportunities, tailored analysis, and the most competitive odds in the market. Whether you're betting on global sporting events or looking for an edge on the next big win, VIP Betting Services provides a secure, high-quality environment where you can thrive.</p>
+                                        <h2>Our Mission</h2>
+                                        <p>At VIP Betting Services, our mission is to provide a superior, secure, and tailored betting experience. We believe that every bettor deserves a unique and trusted platform that offers the tools and resources needed to succeed. We are dedicated to delivering unparalleled expertise, ensuring that every client has the confidence to make the best possible betting decisions.</p>
+                                        <h2>Why Choose VIP Betting Services?</h2>
+                                        <ul>
+                                            <li>Exclusive Access: As a VIP member, you gain access to premium betting markets and superior odds, giving you an edge over the competition.</li>
+                                            <li>Tailored Expertise: Our team of industry experts offers in-depth analysis and personalized insights, helping you make informed betting decisions on major sporting events worldwide.</li>
+                                            <li>Personalized Support: From the moment you sign up, a dedicated account manager will be available to ensure your betting experience is smooth, rewarding, and tailored to your preferences.</li>
+                                            <li>Cutting-Edge Technology: Our platform is designed to offer seamless functionality across devices. Whether you're betting from your desktop or mobile, you can count on fast, intuitive, and secure service.</li>
+                                        </ul>
+                                        <h2>Our Promise</h2>
+                                        <p>At VIP Betting Services, we don’t just provide a platform—we deliver an experience. From the latest betting technology to high-level security, we are committed to safeguarding your privacy and ensuring that your betting journey is enjoyable and stress-free. We value every client and continuously evolve our services to exceed your expectations.</p>
+                                        <h2>Join the VIP Experience</h2>
+                                        <p>Whether you’re an experienced bettor or just starting, VIP Betting Services promises an exclusive experience like no other. Elevate your betting game with access to top-tier markets, tailored insights, and premium customer service. Here, winning isn’t just an ambition—it’s a lifestyle.</p>
+                                        <p>Join our VIP community today and take your betting experience to the next level.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- ============================= About Us End =================== -->
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========================== Footer Start ============================= -->
+        <footer-bar _nghost-bvx-c5="">
+            <footer _ngcontent-bvx-c5="" class="footer">
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <form _ngcontent-bvx-c5="" class="footer-description ng-untouched ng-pristine ng-valid" novalidate="">
+                                <div _ngcontent-bvx-c5="" class="footer-description-item"><span _ngcontent-bvx-c5="">Get exclusive offers and news.</span></div>
+                                <div _ngcontent-bvx-c5="" class="footer-description-item">
+                                    <div _ngcontent-bvx-c5="" class="input-group form-group">
+                                        <input _ngcontent-bvx-c5="" class="form-control ng-untouched ng-pristine ng-invalid" name="Email" placeholder="Email Address" type="email"><span _ngcontent-bvx-c5="" class="input-group-append"><button _ngcontent-bvx-c5="" class="btn btn-flat subscribe-btn" disabled=""> Subscribe </button></span></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Company </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="index.html">Home</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="about-us.html">About us</a>
+
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="listed-races.html">Updated Racing List
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class=" col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Legal </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="privacy-policy.html">Privacy Policy</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item"
+                                    href="terms-conditions.html">Terms and Conditions</a><a _ngcontent-bvx-c5="" class="footer-description-item" href="dispute-resolution.html">Dispute Resolution</a>
+
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12 col-md-6 no-padding">
+                                    <div _ngcontent-bvx-c5="" class="footer-header"> Accepted Payment Methods </div>
+                                    <div _ngcontent-bvx-c5="" class="footer-description footer-payment">
+                                        
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/direct_transfer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/visa_payment_footer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/mastercard.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/POLi_footer_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Customer Support </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description"><a _ngcontent-bvx-c5="" class="footer-description-item" href="tel:+012345678"><i _ngcontent-bvx-c5="" aria-hidden="true" class="fa fa-phone"></i>&nbsp;+012-0123-2136-123</a></div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description" style="text-transform: lowercase;"><a _ngcontent-bvx-c5="" class="footer-description-item" href="mailto:contact@vipbettingservices.com"><i class="fa-solid fa-envelope fa-fw"></i>&nbsp;contact@vipbettingservices.com</a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="footer-logos"></div>
+                            <div _ngcontent-bvx-c5="" class="footer-others col-lg-12 col-md-12 mt-4">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12">
+                                    <div _ngcontent-bvx-c5="" class="row">
+                                        <div _ngcontent-bvx-c5="" class="col-md-8 col-sm-7 middle-footer">
+                                            <div _ngcontent-bvx-c5="" class="col-md-2 middle-image"></div>
+                                            <div _ngcontent-bvx-c5="" class="col-md-10 text-left middle-content"><b _ngcontent-bvx-c5="">Must be 18+ </b>
+                                                <br _ngcontent-bvx-c5=""> <a href="https://www.sa.gov.au/topics/business-and-trade/gambling/codes-of-practice" style="color: #fff !important;" target="_blank">South Australian Residents, Vipbettingservices.com gambling operations are governed by the South Australia Gambling Codes of Practice.</a> Vipbettingservices.com is licensed in New South Wales by Racing NSW and regulated by liquor and Gaming NSW. Think About Your Choices Call Gambling Help 1800 858 858 Responsible Gambling.
+                                            </div>
+                                        </div>
+
+                                        <div _ngcontent-bvx-c5="" class="col-md-4 col-sm-5 right-footer">
+                                            <div _ngcontent-bvx-c5="" class="right-image"><img _ngcontent-bvx-c5="" alt="Shield" src="images/shield.png" style="width:34px; height:41px; margin-right:15px; float:left;">
+                                                <br _ngcontent-bvx-c5="">
+                                            </div>
+                                            <div _ngcontent-bvx-c5="" class="right-content"> YOUR PRIVACY IS IMPORTANT TO US. WE ARE USING A 2048 BIT ENCRYPTION. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div _ngcontent-bvx-c5="" class="row beta mt-4">
+                            <div _ngcontent-bvx-c5="" class="col-lg-12 beta-info">
+                                <div _ngcontent-bvx-c5="" class="copyright">© 2020&nbsp;VIP Betting. ALL RIGHTS RESERVED.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
+        </footer-bar>
+        <!-- ========================== Footer End ============================= -->
+
+        
+
+        <!-- ====================== Script ================================ -->
+        <script src="js/main.90c1149d44f0bb951215.js"></script>
+        <script src="js/min.js"></script>
+        <script src="js/ruffle.js"></script>
+        <script src="js/scripts.9ebd9a470698bb2985b7.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

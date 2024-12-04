@@ -1,0 +1,332 @@
+<!DOCTYPE html>   
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <!-- ======================== Title ============================= -->
+        <title>VIP Betting Services</title>
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+
+        <!-- ================== Link CSS ======================== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+        <!-- ==================== Google Fonts ======================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        
+        <!-- ============= Icon Link ============= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    </head>
+
+    <body class="hold-transition layout-boxed skin-black sidebar-mini">
+         <!-- ========================= Login Popup Start ===================== -->
+         <div id="id01" class="modal">
+            <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h1>Login to your account</h1>
+            </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit" class="mt-2 btn-login">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        
+            <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+            </form>
+        </div>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+        <!-- ========================= Login Popup End ====================== -->
+
+        
+        <div class="shell">
+            <div class="shell-wrapper">
+                <!-- ===================== Header Start ======================== -->
+                <header class="top-bar">
+                    <div class="top-bar-border-top"></div>
+                    
+                </header>
+                <!-- ===================== Header End ======================== -->
+
+
+
+                <!-- ===================== Menu Bar Start =================== -->
+                <div class="menu-bar">
+                    <div class="menu-bar-container container-fluid">
+                        <div class="menu-bar-content">
+
+                            <div class="content-logo p-content-l">
+                                <a class="logo-icon promotion-logo" href="index.html"><img height="87" src="images/logo.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================== Menu Bar End =================== -->
+
+
+
+                <div class="shell-content shell-p">
+                    <section class="shell-main-section card" id="shell-main">
+                        <div class="dashboard-main">
+
+                            <!-- ============================= Promotion Start =================== -->
+                            <section class="promotion-section">
+                                <div class="container">
+                                    <div class="promotion-title">
+                                        <h1>Promotions</h1>
+                                        <p>Discover fresh offers every week to elevate your experience</p>
+                                    </div>
+                                    <div class="promotion-slider">
+                                        <!-- Card 1 -->
+                                        <div class="promotion-card card1">
+                                            <div class="ribbon">
+                                                <img src="images/award.png" alt="Award Ribbon for Promotion 1">
+                                                <p>1</p>
+                                            </div>
+                                            <img src="images/presents.png" alt="Gift Box Promotion Icon">
+                                            <h2>100% up to $500 <br><span>+200 Freespins</span></h2>
+                                            <p>Kickstart your adventure with a generous welcome offer</p>
+                                            <a href=""><button>Get Bonus</button></a>
+                                        </div>
+                                        <div class="promotion-card card2">
+                                            <div class="ribbon">
+                                                <img src="images/award.png" alt="Award Ribbon for Promotion 1">
+                                                <p>1</p>
+                                            </div>
+                                            <img src="images/presents.png" alt="Gift Box Promotion Icon">
+                                            <h2>100% up to $400 <br><span>+200 Freespins</span></h2>
+                                            <p>Spin and win with this exclusive match bonus offer</p>
+                                            <a href=""><button>Get Bonus</button></a>
+                                        </div>
+                                        <div class="promotion-card card3">
+                                            <div class="ribbon">
+                                                <img src="images/award.png" alt="Award Ribbon for Promotion 1">
+                                                <p>1</p>
+                                            </div>
+                                            <img src="images/presents.png" alt="Gift Box Promotion Icon">
+                                            <h2>100% up to $300 <br><span>+200 Freespins</span></h2>
+                                            <p>oin the excitement with rewards made for you</p>
+                                            <a href=""><button>Get Bonus</button></a>
+                                        </div>
+                                        <div class="promotion-card card4">
+                                            <div class="ribbon">
+                                                <img src="images/award.png" alt="Award Ribbon for Promotion 1">
+                                                <p>1</p>
+                                            </div>
+                                            <img src="images/presents.png" alt="Gift Box Promotion Icon">
+                                            <h2>100% up to $250 <br><span>+200 Freespins</span></h2>
+                                            <p>Boost your play with this exciting jackpot offer</p>
+                                            <a href=""><button>Get Bonus</button></a>
+                                        </div>
+                                        <div class="promotion-card card5">
+                                            <div class="ribbon">
+                                                <img src="images/award.png" alt="Award Ribbon for Promotion 1">
+                                                <p>1</p>
+                                            </div>
+                                            <img src="images/presents.png" alt="Gift Box Promotion Icon">
+                                            <h2>100% up to $200<br><span>+200 Freespins</span></h2>
+                                            <p>Grab this special offer to power up your bankroll</p>
+                                            <a href=""><button>Get Bonus</button></a>
+                                        </div>
+                                        <!-- Repeat other cards here -->
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- ============================= Promotion End =================== -->
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========================== Footer Start ============================= -->
+        <footer-bar _nghost-bvx-c5="">
+            <footer _ngcontent-bvx-c5="" class="footer">
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <form _ngcontent-bvx-c5="" class="footer-description ng-untouched ng-pristine ng-valid" novalidate="">
+                                <div _ngcontent-bvx-c5="" class="footer-description-item"><span _ngcontent-bvx-c5="">Get exclusive offers and news.</span></div>
+                                <div _ngcontent-bvx-c5="" class="footer-description-item">
+                                    <div _ngcontent-bvx-c5="" class="input-group form-group">
+                                        <input _ngcontent-bvx-c5="" class="form-control ng-untouched ng-pristine ng-invalid" name="Email" placeholder="Email Address" type="email"><span _ngcontent-bvx-c5="" class="input-group-append"><button _ngcontent-bvx-c5="" class="btn btn-flat subscribe-btn" disabled=""> Subscribe </button></span></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Company </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="index.html">Home</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="about-us.html">About us</a>
+
+                                    <a _ngcontent-bvx-c5="" class=" footer-description-item" href="listed-races.html">Updated Racing List
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class=" col-lg-2 col-md-6 col-sm-6">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Legal </div>
+
+                                <div _ngcontent-bvx-c5="" class="footer-description">
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item" href="privacy-policy.html">Privacy Policy</a>
+                                    
+                                    <a _ngcontent-bvx-c5="" class="footer-description-item"
+                                    href="terms-conditions.html">Terms and Conditions</a><a _ngcontent-bvx-c5="" class="footer-description-item" href="dispute-resolution.html">Dispute Resolution</a>
+
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12 col-md-6 no-padding">
+                                    <div _ngcontent-bvx-c5="" class="footer-header"> Accepted Payment Methods </div>
+                                    <div _ngcontent-bvx-c5="" class="footer-description footer-payment">
+                                        
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/direct_transfer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/visa_payment_footer.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/mastercard.png">
+
+                                        <img _ngcontent-bvx-c5="" height="40" src="images/POLi_footer_logo.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div _ngcontent-bvx-c5="" class="col-lg-4 col-md-12">
+                                <div _ngcontent-bvx-c5="" class="footer-header"> Customer Support </div>
+
+
+                                <div _ngcontent-bvx-c5="" class="footer-description" style="text-transform: lowercase;"><a _ngcontent-bvx-c5="" class="footer-description-item" href="mailto:contact@vipbettingservices.com"><i class="fa-solid fa-envelope fa-fw"></i>&nbsp;contact@vipbettingservices.com</a></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div _ngcontent-bvx-c5="" class="footer-content">
+                    <div _ngcontent-bvx-c5="" class="container-fluid">
+                        <div _ngcontent-bvx-c5="" class="row">
+                            <div _ngcontent-bvx-c5="" class="footer-logos"></div>
+                            <div _ngcontent-bvx-c5="" class="footer-others col-lg-12 col-md-12 mt-4">
+                                <div _ngcontent-bvx-c5="" class="col-lg-12">
+                                    <div _ngcontent-bvx-c5="" class="row">
+                                        <div _ngcontent-bvx-c5="" class="col-md-8 col-sm-7 middle-footer">
+                                            <div _ngcontent-bvx-c5="" class="col-md-2 middle-image"></div>
+                                            <div _ngcontent-bvx-c5="" class="col-md-10 text-left middle-content"><b _ngcontent-bvx-c5="">Must be 18+ </b>
+                                                <br _ngcontent-bvx-c5=""> <a href="https://www.sa.gov.au/topics/business-and-trade/gambling/codes-of-practice" style="color: #fff !important;" target="_blank">South Australian Residents, Vipbettingservices.com gambling operations are governed by the South Australia Gambling Codes of Practice.</a> Vipbettingservices.com is licensed in New South Wales by Racing NSW and regulated by liquor and Gaming NSW. Think About Your Choices Call Gambling Help 1800 858 858 Responsible Gambling.
+                                            </div>
+                                        </div>
+
+                                        <div _ngcontent-bvx-c5="" class="col-md-4 col-sm-5 right-footer">
+                                            <div _ngcontent-bvx-c5="" class="right-image"><img _ngcontent-bvx-c5="" alt="Shield" src="images/shield.png" style="width:34px; height:41px; margin-right:15px; float:left;">
+                                                <br _ngcontent-bvx-c5="">
+                                            </div>
+                                            <div _ngcontent-bvx-c5="" class="right-content"> YOUR PRIVACY IS IMPORTANT TO US. WE ARE USING A 2048 BIT ENCRYPTION. </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div _ngcontent-bvx-c5="" class="row beta mt-4">
+                            <div _ngcontent-bvx-c5="" class="col-lg-12 beta-info">
+                                <div _ngcontent-bvx-c5="" class="copyright">© 2020&nbsp;VIP Betting. ALL RIGHTS RESERVED.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
+        </footer-bar>
+        <!-- ========================== Footer End ============================= -->
+
+        
+
+        <!-- ====================== Script ================================ -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Slick JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.promotion-slider').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024, // Tablet
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 768, // Mobile
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>
