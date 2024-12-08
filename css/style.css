@@ -355,7 +355,7 @@ section.promotion-section {
       word-spacing: 0px;
   }
   .top-bar-wrapper.promo-wrap-bar {
-    display: none;
+    display: none !important;
 }
   .promotion-wrapper {
     display: grid;
